@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jeu Concours Saint Valentin - Floral Concept</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="animations.css">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="particles-container" id="particles-js"></div>
+
+  <div class="container">
+    <header>
+      <div class="logo-container">
+        Floral Concept
+      </div>
+      <div class="anniversary-badge">
+        <span>10 ANS</span>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <h1 class="title">Célébrez l'Amour avec Nous</h1>
+        <h2 class="subtitle">Pour nos 10 ans, nous vous offrons une chance de gagner des cadeaux exceptionnels 💝</h2>
+        
+        <div class="cta-wrapper">
+          <a href="#prizes" class="cta-button">Découvrir les surprises</a>
+        </div>
+      </section>
+
+      <section id="prizes" class="prizes">
+        <h2 class="section-title">Des Cadeaux qui Font Rêver</h2>
+        
+        <div class="prize-items">
+          <div class="prize-card" id="gift-card">
+            <div class="prize-image" style="background-color: #dc9ba3;">
+              <img src="images/gift-card.png" alt="Bons d'achat jusqu'à 1000dh">
+            </div>
+            <div class="prize-info">
+              <h3>Bons d'Achat</h3>
+              <p>Offrez-vous ce qui vous fait plaisir avec nos bons d'achat allant jusqu'à <strong>1000dh</strong> 🎁</p>
+            </div>
+          </div>
+          
+          <div class="prize-card featured" id="car">
+            <div class="prize-badge">Grand Prix</div>
+            <div class="prize-image">
+              <img src="images/red-clio.png" alt="Renault Clio Rouge">
+            </div>
+            <div class="prize-info">
+              <h3>Une Renault Clio Rouge</h3>
+              <p>Imaginez-vous au volant de cette magnifique voiture rouge passion 🚗</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="participation">
+        <h2 class="section-title">Tentez Votre Chance</h2>
+        <p class="participation-info">Un simple numéro de téléphone pourrait changer votre vie ✨</p>
+        
+        <form id="contest-form" class="contest-form">
+          <div class="form-group">
+            <label for="phone">Votre numéro de téléphone</label>
+            <input type="tel" id="phone" name="phone" placeholder="06 XX XX XX XX" required>
+            <div class="error-message" id="phone-error"></div>
+          </div>
+          
+          <div class="form-group checkbox-group">
+            <input type="checkbox" id="terms" name="terms" required>
+            <label for="terms">Je souhaite participer au tirage au sort</label>
+            <div class="error-message" id="terms-error"></div>
+          </div>
+          
+          <button type="submit" class="submit-button">
+            <span class="button-text">Je Tente Ma Chance</span>
+            <span class="button-icon">✨</span>
+          </button>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-content">
+        <div class="company-info" style="margin-left: 20px;">
+          <p>Floral Concept © 2024 - 10 ans de passion à vos côtés 🌸</p>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <div id="thank-you-modal" class="modal">
+    <div class="modal-content">
+      <span class="close-button">&times;</span>
+      <h2>Merci de votre participation! 🎉</h2>
+      <p>Votre chance est en route...</p>
+      <div class="confetti-container"></div>
+      <p>Rendez-vous le 14 février pour découvrir si l'amour vous sourit ❤️</p>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+  <script src="particles-config.js"></script>
+  <script src="animations.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
